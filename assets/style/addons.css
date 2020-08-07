@@ -1,0 +1,34 @@
+/*-------------------------------------------------------+
+| The One Point - Content Management System
+| http://www.theonepoint.co.uk/
++--------------------------------------------------------+
+| Author: David Carr  Email: d.carr@theonepoint.co.uk
++--------------------------------------------------------+*/
+
+/* pagination */
+
+.pagination a {
+	padding: 2px 5px 2px 5px;
+	margin: 2px;
+	border: 1px solid #AAAADD;	
+	text-decoration: none; 
+	color: #000099;
+}
+.pagination a:hover, .pagination a:active {
+	border: 1px solid #000099;
+	color: #000;
+}
+.pagination span.current {
+	padding: 2px 5px 2px 5px;
+	margin: 2px;
+	border: 1px solid #000099;
+	font-weight: bold;
+	background-color: #000099;
+	color: #FFF;
+	}
+.pagination span.disabled {
+	padding: 2px 5px 2px 5px;
+	margin: 2px;
+	border: 1px solid #EEE;
+	color: #DDD;
+}

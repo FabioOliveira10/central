@@ -1,0 +1,488 @@
+/*-------------------------------------------------------+
+| The One Point - Content Management System
+| http://www.theonepoint.co.uk/
++--------------------------------------------------------+
+| Author: David Carr  Email: d.carr@theonepoint.co.uk
++--------------------------------------------------------+*/
+
+body {
+    background: url("../images/bg.jpg") no-repeat scroll center top #FBBE01;
+    font-family: Arial,Helvetica,sans-serif;
+    font-size: 80%;
+    margin: 0;
+}
+
+
+/* basic layout ---------------------------------------------------------------- */
+
+div {
+  font-size: 1em;
+}
+
+#wrapper {
+	margin:25px auto 0;
+	width:960px;
+}
+
+/* Header informatiom */
+
+#navigation {
+    float: right;
+    font-family: century gothic;
+    margin-top: 75px;
+	margin-bottom:15px;
+    width: 635px;
+}
+
+#logo {
+    float: left;
+    height: 154px;
+    width: 253px;
+}
+
+#search {
+    float: right;
+    margin-right: 50px;
+    margin-top: 0px;
+    width: 250px;
+}
+
+#form-search {
+    background: url("../images/search.png") no-repeat scroll left center transparent;
+    height: 41px;
+    margin: 0;
+    padding: 0;
+    width: 296px;
+}
+
+#form-search p {
+    padding-left: 10px;
+    padding-top: 7px;
+}
+
+#input-keywords, #submit-search {
+	vertical-align: middle;
+	padding: 0;
+	margin: 0;
+}
+
+#input-keywords {
+    border: medium none;
+    height: 20px;
+    line-height: 20px;
+    width: 246px;
+	font-size: 10px;
+	color:#666;
+}
+
+
+/* newsletter */
+
+#form-newsletter {
+    background: url("../images/search.png") no-repeat scroll left center transparent;
+    height: 41px;
+    margin: 0;
+    padding: 0;
+    width: 264px;
+}
+
+#form-newsletter p {
+    padding-left: 10px;
+    padding-top: 7px;
+}
+
+#input-newsletter, #submit-newsletter {
+    margin: 7px 0 0;
+    padding: 0;
+    vertical-align: middle;
+}
+
+#input-newsletter {
+    border: medium none;
+    color: #666666;
+    font-size: 10px;
+    height: 20px;
+    line-height: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 220px;
+}
+
+
+/* Navi informatiom */
+
+#navigation {
+    float: right;
+    font-family: century gothic;
+    width: 635px;
+}
+
+/*** Superfish SKIN ***/
+.sf-menu {
+	float:			left;
+	margin-bottom:	1em;
+}
+.sf-menu a {
+	padding: 		.95em 1em;
+	text-decoration:none;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+.sf-menu a:link, .sf-menu li li a, .sf-menu a:visited, .sf-menu a:active   { /* visited pseudo selector so IE6 applies text colour*/
+	color:#000;	
+}
+.sf-menu li {
+}
+.sf-menu li li {
+	
+}
+.sf-menu li:hover, .sf-menu li.sfHover,
+.sf-menu a:focus, .sf-menu a:hover, .sf-menu a:active {
+	color:#cc0000;
+	outline:		0;
+}
+
+.sf-menu { position:relative !important; overflow:visible !important; z-index:80; }
+
+#current {
+	color:#cc0000;
+	}
+	
+.first {
+	border:none !important;
+	}
+.last {
+	border:none !important;
+	}
+
+/* Content informatiom */
+
+#contbd {
+    background: url("../images/contupper.png") no-repeat scroll left top transparent;
+    clear: both;
+    min-height: 165px;
+    padding-top: 30px;
+}
+
+#contwrapper {
+    background: none repeat scroll 0 0 #FFFBE6;
+    height: auto;
+    margin: auto;
+    overflow: auto;
+    padding: 10px 20px 20px;
+    width: 886px;
+}
+
+#breadcrumb {
+	width:886px;
+	margin:auto;
+	height:auto;
+	margin-top:10px;	
+}
+
+
+#content {
+	width:886px;
+	margin:auto;
+	height:auto;
+	overflow:auto;
+	margin-top:10px;
+	background:url(../images/contbg.png);
+}
+
+
+#content-left {
+	float:left;
+	height:auto;
+	width:620px;
+	overflow:hidden;
+}
+
+#content-left h1 {
+	color:#cc0000;
+	font-size:25px;
+	font-weight:bold;
+	margin:0px;
+}
+
+#content-left ul {
+	margin-left: 20px;
+    Padding: 5px;
+}
+
+#content-left li {
+	padding: 5px;
+	margin: 0;
+}
+
+
+
+#content-right{
+	width:250px;
+	height:auto;
+	float:right;
+}
+
+.sidebox {
+	height:auto;
+	margin-bottom:20px;
+	padding:5px 15px 10px;
+	line-height:18px;
+}
+
+.sidebox h1 {
+	color:#cc0000;
+	font-size:16px;
+	font-weight:bold;
+	margin:0 0 10px;
+}
+
+.sidebox h3 {
+	color:#cc0000;
+}
+
+.sidebox ul {
+	list-style:none outside none;
+	margin:-15px 0 0;
+	padding:0;
+}
+
+.sidebox li a {
+    display: block;
+    line-height: 18px;
+    padding: 0;
+}
+
+
+/* Footer informatiom */
+
+#boxContainer {
+    clear: both;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    padding: 25px 15px;
+    width: 960px;
+}
+
+#box1 img, #box2 img, #box3 img{
+	border:2px solid #ffed00;
+}
+	
+
+#box1 {
+    background: url("../images/bl.png") repeat-y scroll right center transparent;
+    float: left;
+    padding-right: 20px;
+    width: 283px;
+}
+	
+#box2 {
+    float: left;
+    padding-left: 20px;
+    width: 300px;
+}
+
+#box3 {
+    background: url("../images/br.png") repeat-y scroll left center transparent;
+    float: right;
+    padding-left: 30px;
+    width: 290px;
+}
+	
+#footerbar {
+    background: url("../images/footerbar.png") repeat-x scroll 0 0 transparent;
+    clear: both;
+    height: 10px;
+    margin-top: 20px;
+}
+
+#footer-wrapper {
+    background: url("../images/footer.jpg") repeat-x scroll 0 0 transparent;
+    clear: both;
+    height: 136px;
+    padding-top: 20px;
+}
+
+#footer {
+	margin:auto;
+	width:960px;
+}
+
+#copyl{
+	float:left;
+	width:400px;
+}
+#copyr{
+	float:right;
+	width:400px;
+	text-align:right;
+}
+
+
+/* links ----------------------------------------------------------------------- */
+
+a {
+	 text-decoration:none;
+	 color:#cc0000;
+	 background-color: inherit;
+	 font-weight:bold;
+}
+
+a:hover {
+	 text-decoration:underline;
+}
+
+
+/* headings -------------------------------------------------------------------- */
+
+
+h1 {
+	  font-size: 16px;
+	  line-height: 1em;
+	  padding-bottom:0.2em;
+	  color:#cc0000;
+	  margin:0 0 10px;
+	  font-family: century gothic;
+}
+
+h2 {
+	border-bottom:1px solid #E4E4E4;
+	font-size:20px;
+	margin:0 0 10px;
+	padding:0 0 15px 10px;
+}
+
+h3 {
+	  font-size: 1.3em;
+	  margin:0 0 10px;
+	  font-weight:bold;
+}
+
+h4 {
+	 font-size: 1.2em;
+	  line-height: 1.3em;
+	  margin: 0 0 0.5em 0;
+	  font-weight:bold;
+	  margin:0 0 10px;
+	  color:#CC9933;
+}
+
+h5 { 
+	  font-size: 1em;
+	  line-height: 1.5em;
+	  color:#000;
+	  margin:0 0 10px;
+}
+
+/* text ------------------------------------------------------------------------ */
+p {
+
+	  font-size: 1em;
+	  line-height: 18px;
+	  margin: 0 0 1em 0;
+}
+
+strong, b {
+	  font-weight: bold;
+}
+
+
+/* jquery styles --------------------------------------------------------------- */
+
+
+/* additional styles ----------------------------------------------------------- */
+
+.button {
+	background:none repeat scroll 0 0 #cc0000;
+	border:1px solid #000000;
+	color:#FFFFFF;
+	cursor:pointer;
+	margin-top:10px;
+	padding:5px 15px;
+}
+.button:hover { 
+	background-color:#fff; 
+	color:#000;
+	}
+
+.clear {
+  	clear: both;
+}
+
+.f-left {
+    float: left;
+    margin-right: 5px;
+}
+
+.f-right {
+  	float: right;
+	margin-left: 5px;
+}
+
+.f-right img{
+	border:2px solid #ffed00;
+}
+
+label {
+	float:left;
+	margin-right:10px;
+	width:100px;
+	font-weight:bold;	
+	}
+	
+/* MESSAGES */
+.hidethis { cursor:pointer; }
+.msg-info, .msg-atten, .msg-ok, .msg-error { margin:3px 0; padding:10px 10px 10px 40px; -moz-border-radius:5px; -webkit-border-radius:5px; }
+.msg-info { background:#ADC2F7 url(../../images/icons/msg-info.png) 6px center no-repeat; border:1px solid #6D94F7; color:#03C; }
+.msg-atten { background:#FAE673 url(../../images/icons/msg-atten.png) 6px center no-repeat; border:1px solid #FEBD63; color:#C60; }
+.msg-ok { background:#AEE893 url(../../images/icons/msg-ok.png) 6px center no-repeat; border:1px solid #8EC46C; color:#060; }
+.msg-error { background:#F4B8B5 url(../../images/icons/msg-error.png) 6px center no-repeat; border:1px solid #C94042; color:#900; }
+/* END OF MESSAGES */
+
+
+/* Slider */
+div.slider { width: 100%; height: 345px; font-family: Arial, Helvetica, sans-serif; font-size: 12px; line-height: 18px; color: #404040; margin: 0; padding-top: 15px; clear:both; background:url(../images/slidebg.png)}
+div.slider div.wrapper { height: 330px; width: 930px; position: absolute; margin: 0 0 0 -465px; left: 50%; overflow: hidden; }
+div.slider div.wrapper ul { position: relative; left: 0; height: 334px; }
+div.slider div.wrapper ul li { display: block; width: 930px; float: left; height: 344px; }
+div.slider div.wrapper ul li div { padding: 0px 0 0 0; }
+div.slider div.wrapper ul li div img {
+    float: right;
+    width: 570px;
+}
+
+div.slider div.wrapper ul li div h1 { font-size: 32px; color: #fff; padding: 0; margin: 0; padding: 30px 30px 0; line-height:1.2em; }
+div.slider div.wrapper ul li div p { padding: 5px 30px; margin:0px; color: #fff;}
+div.slider div.wrapper a { color: #fff;}
+.slidet {
+    height: 330px;
+    float:left;
+    width: 360px;
+}
+/* End Slider */
+
+/* Slider dots */
+div.sliderdots { }
+div.sliderdots div.dots { position: absolute; height: 34px; width: 980px; left: 50%; margin: 0 0 0 -490px; }
+div.sliderdots div.dots a { background: url(../images/sprite.png) no-repeat 0 0; display: inline-block; width: 9px; height: 9px; margin: 14px 2px 0 2px; }
+div.sliderdots div.dots a.current { background: url(../images/sprite.png) no-repeat -9px 0; margin: 14px 2px 0 2px; width: 9px; height: 9px; }
+div.sliderdots div.dots a.leftarrow { position: absolute; left: 0px; top: -220px; width: 30px; height: 30px; background:url(../images/leftarrow.png); } 
+div.sliderdots div.dots a.rightarrow { position: absolute; right: 0px; top: -220px; width: 30px; height: 30px; background:url(../images/rightarrow.png); } 
+/* End Slider dots */
+
+/* Buttons */
+span.headerbtn a { font-weight: 900; margin: 28px 56px 0 22px;  cursor: pointer; background:#0092DB; display: block; float: left; height: 28px; text-decoration: none; padding-left: 1px;}
+span.headerbtn a span { background:#0092DB; color: #fff; display: block; height: 22px; font-size: 12px; float: left; padding: 6px 31px 1px 30px; }
+
+
+span.headerbtn a span:hover { background:#0973BA; } 
+/* End Buttons */
+
+
+/*-------------------------------------------------------+
+| The One Point - Content Management System
+| http://www.theonepoint.co.uk/
++--------------------------------------------------------+
+| Author: David Carr  Email: d.carr@theonepoint.co.uk
++--------------------------------------------------------+*/

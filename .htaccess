@@ -1,0 +1,243 @@
+#-------------------------------------------------------+
+# David Carr's - Content Management System
+# http://www.daveismyname.co.uk/
+#--------------------------------------------------------+
+# Author: David Carr  Email: dave@daveismyname.co.uk
+#--------------------------------------------------------+*/
+
+# For security reasons, Option followsymlinks cannot be overridden.
+Options FollowSymLinks
+Options SymLinksIfOwnerMatch
+RewriteEngine On
+
+RewriteBase /central/
+
+RewriteCond %{HTTP_HOST} !^www\.
+RewriteRule ^(.*)$ http://www.%{HTTP_HOST}/$1 [R=301,L] 
+
+RewriteRule ^news.rss$  							                    assets/rss/news.php [L]
+RewriteRule ^blog.rss$  							                    assets/rss/blog.php [L]
+
+RewriteRule ^admin$  							                        admin.php?admin=$1 [L]
+RewriteRule ^admin/$  							                        admin.php?admin=$1 [L]
+
+RewriteRule ^admin/login$ 						                        assets/admin/login.php [L]
+RewriteRule ^admin/login/$						                        assets/admin/login.php [L]
+
+RewriteRule ^admin/reset$ 						                        assets/admin/reset.php [L]
+RewriteRule ^admin/reset/$						                        assets/admin/reset.php [L]
+
+RewriteRule ^logout$  							                        admin.php?logout=$1 [L]
+RewriteRule ^logout/$  							                        admin.php?logout=$1 [L]
+
+RewriteRule ^admin/settings$ 			                        		admin.php?ssettings=$1 [L]
+RewriteRule ^admin/settings/$			                        		admin.php?ssettings=$1 [L]
+
+RewriteRule ^admin/site-settings$ 		                        		admin.php?site-settings=$1 [L]
+RewriteRule ^admin/site-settings/$		                        		admin.php?site-settings=$1 [L]
+
+RewriteRule ^admin/manage-add-ons$ 			                            admin.php?manage-add-ons=$1 [L]
+RewriteRule ^admin/manage-add-ons/$			                            admin.php?manage-add-ons=$1 [L]
+
+RewriteRule ^admin/manage-sidebar-panels$ 			                    admin.php?manage-sidebar-panels=$1 [L]
+RewriteRule ^admin/manage-sidebar-panels/$			                    admin.php?manage-sidebar-panels=$1 [L]
+
+RewriteRule ^admin/manage-sidebar-panels/add-sidebar-panel$             admin.php?add-sidebar-panel=$1 [L]
+RewriteRule ^admin/manage-sidebar-panels/add-sidebar-panel/$            admin.php?add-sidebar-panel=$1 [L]
+
+RewriteRule ^admin/manage-sidebar-panels/edit-sidebar-panel-([^/]+)$    admin.php?edit-sidebar-panel=$1 [L]
+RewriteRule ^admin/manage-sidebar-panels/edit-sidebar-panel-([^/]+)/$   admin.php?edit-sidebar-panel=$1 [L]
+
+RewriteRule ^admin/manage-users$ 			                            admin.php?manage-users=$1 [L]
+RewriteRule ^admin/manage-users/$			                            admin.php?manage-users=$1 [L]
+
+RewriteRule ^admin/manage-users/add-user$                               admin.php?add-user=$1 [L]
+RewriteRule ^admin/manage-users/add-user/$                              admin.php?add-user=$1 [L]
+
+RewriteRule ^admin/manage-users/edit-user-([^/]+)$                      admin.php?edit-user=$1 [L]
+RewriteRule ^admin/manage-users/edit-user-([^/]+)/$                     admin.php?edit-user=$1 [L]
+
+RewriteRule ^admin/manage-pages$ 			                            admin.php?manage-pages=$1 [L]
+RewriteRule ^admin/manage-pages/$			                            admin.php?manage-pages=$1 [L]
+
+RewriteRule ^admin/manage-footers$ 			                            admin.php?manage-footers=$1 [L]
+RewriteRule ^admin/manage-footers/$			                            admin.php?manage-footers=$1 [L]
+
+RewriteRule ^admin/manage-pages/edit-page-([^/]+)$                      admin.php?edit-page=$1 [L]
+RewriteRule ^admin/manage-pages/edit-page-([^/]+)/$                     admin.php?edit-page=$1 [L]
+
+RewriteRule ^admin/manage-pages/add-page$                               admin.php?add-page=$1 [L]
+RewriteRule ^admin/manage-pages/add-page/$                              admin.php?add-page=$1 [L]
+
+RewriteRule ^admin/admin-details$ 				                        admin.php?admin-details=$1 [L]
+RewriteRule ^admin/admin-details/$ 			                            admin.php?admin-details=$1 [L]
+
+RewriteRule ^admin/change-pass$ 				                        admin.php?change-pass=$1 [L]
+RewriteRule ^admin/change-pass/$ 				                        admin.php?change-pass=$1 [L]
+
+RewriteRule ^admin/reset$ 				                                admin.php?reset=$1 [L]
+RewriteRule ^admin/reset/$ 				                                admin.php?reset=$1 [L]
+
+RewriteRule ^admin/themes$    	         								admin.php?themes=$1 [L]
+RewriteRule ^admin/themes/$ 		        							admin.php?themes=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/contact-form$                   admin.php?contact-form=$1 [L]
+RewriteRule ^admin/manage-add-ons/contact-form/$                  admin.php?contact-form=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/search$                    admin.php?manage-search=$1 [L]
+RewriteRule ^admin/manage-add-ons/search/$                   admin.php?manage-search=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/favicon$ 	  					  admin.php?favicon=$1 [L]
+RewriteRule ^admin/manage-add-ons/favicon/$                       admin.php?favicon=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/rssreader$ 		                admin.php?rssreader=$1 [L]
+RewriteRule ^admin/manage-add-ons/rssreader/$		                admin.php?rssreader=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/rssreader/add-rss$ 			    admin.php?add-rss=$1 [L]
+RewriteRule ^admin/manage-add-ons/rssreader/add-rss/$			    admin.php?add-rss=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/rssreader/edit-rss-([^/]+)$ 		admin.php?edit-rss=$1 [L]
+RewriteRule ^admin/manage-add-ons/rssreader/edit-rss-([^/]+)/$		admin.php?edit-rss=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/gallery$ 			                admin.php?gallery=$1 [L]
+RewriteRule ^admin/manage-add-ons/gallery/$			                admin.php?gallery=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/gallery/add-album$ 			    admin.php?add-album=$1 [L]
+RewriteRule ^admin/manage-add-ons/gallery/add-album/$			    admin.php?add-album=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/gallery/edit-album-([^/]+)$ 		admin.php?edit-album=$1 [L]
+RewriteRule ^admin/manage-add-ons/gallery/edit-album-([^/]+)/$		admin.php?edit-album=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/gallery/images-([^/]+)$ 		    admin.php?gimages=$1 [L]
+RewriteRule ^admin/manage-add-ons/gallery/images-([^/]+)/$  	    admin.php?gimages=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/gallery/images/add-image-([^/]+)$   admin.php?add-image=$1 [L]
+RewriteRule ^admin/manage-add-ons/gallery/images/add-image-([^/]+)/$  admin.php?add-image=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/gallery/images/edit-image-([^/]+)$  admin.php?edit-image=$1 [L]
+RewriteRule ^admin/manage-add-ons/gallery/images/edit-image-([^/]+)/$ admin.php?edit-image=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/code$ 		                admin.php?code=$1 [L]
+RewriteRule ^admin/manage-add-ons/code/$		                admin.php?code=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/code/add-code$ 			    admin.php?add-code=$1 [L]
+RewriteRule ^admin/manage-add-ons/code/add-code/$			    admin.php?add-code=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/code/edit-code-([^/]+)$ 		admin.php?edit-code=$1 [L]
+RewriteRule ^admin/manage-add-ons/code/edit-code-([^/]+)/$		admin.php?edit-code=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/lists$ 			                admin.php?lists=$1 [L]
+RewriteRule ^admin/manage-add-ons/lists/$			                admin.php?lists=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/lists/add-list$ 			    admin.php?add-list=$1 [L]
+RewriteRule ^admin/manage-add-ons/lists/add-list/$			    admin.php?add-list=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/lists/edit-list-([^/]+)$ 		admin.php?edit-list=$1 [L]
+RewriteRule ^admin/manage-add-ons/lists/edit-list-([^/]+)/$		admin.php?edit-list=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/lists/items-([^/]+)$ 		    admin.php?items=$1 [L]
+RewriteRule ^admin/manage-add-ons/lists/items-([^/]+)/$  	    admin.php?items=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/lists/items/add-item-([^/]+)$   admin.php?add-item=$1 [L]
+RewriteRule ^admin/manage-add-ons/lists/items/add-item-([^/]+)/$  admin.php?add-item=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/lists/items/edit-item-([^/]+)$  admin.php?edit-item=$1 [L]
+RewriteRule ^admin/manage-add-ons/lists/items/edit-item-([^/]+)/$ admin.php?edit-item=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/google-map$                    admin.php?google-map=$1 [L]
+RewriteRule ^admin/manage-add-ons/google-map/$                   admin.php?google-map=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/google-map/settings$           admin.php?settings=$1 [L]
+RewriteRule ^admin/manage-add-ons/google-map/settings/$          admin.php?settings=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/events$ 			                admin.php?events=$1 [L]
+RewriteRule ^admin/manage-add-ons/events/$			                admin.php?events=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/events/add-events-cat$ 			    admin.php?add-events-cat=$1 [L]
+RewriteRule ^admin/manage-add-ons/events/add-events-cat/$			    admin.php?add-events-cat=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/events/edit-events-cat-([^/]+)$ 		admin.php?edit-events-cat=$1 [L]
+RewriteRule ^admin/manage-add-ons/events/edit-events-cat-([^/]+)/$		admin.php?edit-events-cat=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/events/posts-([^/]+)$ 		    admin.php?posts=$1 [L]
+RewriteRule ^admin/manage-add-ons/events/posts-([^/]+)/$  	    admin.php?posts=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/events/posts/add-post-([^/]+)$   admin.php?add-post=$1 [L]
+RewriteRule ^admin/manage-add-ons/events/posts/add-post-([^/]+)/$  admin.php?add-post=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/events/posts/edit-post-([^/]+)$  admin.php?edit-post=$1 [L]
+RewriteRule ^admin/manage-add-ons/events/posts/edit-post-([^/]+)/$ admin.php?edit-post=$1 [L]
+
+RewriteRule ^c-([^/]+)$                  	        			 index.php?eventscat=$1 [L]
+RewriteRule ^c-([^/]+)/$                 						 index.php?eventscat=$1 [L]
+
+RewriteRule ^p-([^/]+)$                  	        			 index.php?eventspost=$1 [L]
+RewriteRule ^p-([^/]+)/$                 						 index.php?eventspost=$1 [L]
+
+RewriteRule ^pa-([^/]+)$                  	        			 index.php?eventspage=$1 [L]
+RewriteRule ^pa-([^/]+)/$                 						 index.php?eventspage=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/polls$ 			                admin.php?polls=$1 [L]
+RewriteRule ^admin/manage-add-ons/polls/$			                admin.php?polls=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/polls/add-poll$ 			    admin.php?add-poll=$1 [L]
+RewriteRule ^admin/manage-add-ons/polls/add-poll/$			    admin.php?add-poll=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/polls/edit-poll-([^/]+)$ 		admin.php?edit-poll=$1 [L]
+RewriteRule ^admin/manage-add-ons/polls/edit-poll-([^/]+)/$		admin.php?edit-poll=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/polls/poll-([^/]+)$ 		    admin.php?poll=$1 [L]
+RewriteRule ^admin/manage-add-ons/polls/poll-([^/]+)/$  	    admin.php?poll=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/polls/add-option-([^/]+)$   admin.php?add-option=$1 [L]
+RewriteRule ^admin/manage-add-ons/polls/add-option-([^/]+)/$  admin.php?add-option=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/polls/edit-option-([^/]+)$  admin.php?edit-option=$1 [L]
+RewriteRule ^admin/manage-add-ons/polls/edit-option-([^/]+)/$ admin.php?edit-option=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/newssnippit$                    admin.php?newssnippit=$1 [L]
+RewriteRule ^admin/manage-add-ons/newssnippit/$                   admin.php?newssnippit=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/news$                    admin.php?news=$1 [L]
+RewriteRule ^admin/manage-add-ons/news/$                   admin.php?news=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/news/add-news$            admin.php?add-news=$1 [L]
+RewriteRule ^admin/manage-add-ons/news/add-news/$           admin.php?add-news=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/news/edit-news-([^/]+)$   admin.php?edit-news=$1 [L]
+RewriteRule ^admin/manage-add-ons/news/edit-news-([^/]+)/$  admin.php?edit-news=$1 [L]
+
+RewriteRule ^newsp-([^/]+)$                  	              index.php?newspage=$1 [L]
+RewriteRule ^newsp-([^/]+)/$                 	              index.php?newspage=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/mailing-list$ 			            admin.php?mailing-list=$1 [L]
+RewriteRule ^admin/manage-add-ons/mailing-list/$			            admin.php?mailing-list=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/recipessnippit$                    admin.php?recipessnippit=$1 [L]
+RewriteRule ^admin/manage-add-ons/recipessnippit/$                   admin.php?recipessnippit=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/recipes$                    admin.php?recipes=$1 [L]
+RewriteRule ^admin/manage-add-ons/recipes/$                   admin.php?recipes=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/recipes/add-recipes$            admin.php?add-recipes=$1 [L]
+RewriteRule ^admin/manage-add-ons/recipes/add-recipes/$           admin.php?add-recipes=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/recipes/edit-recipes-([^/]+)$   admin.php?edit-recipes=$1 [L]
+RewriteRule ^admin/manage-add-ons/recipes/edit-recipes-([^/]+)/$  admin.php?edit-recipes=$1 [L]
+
+RewriteRule ^recipesp-([^/]+)$                  	              index.php?recipespage=$1 [L]
+RewriteRule ^recipesp-([^/]+)/$                 	              index.php?recipespage=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/slides$                    admin.php?slides=$1 [L]
+RewriteRule ^admin/manage-add-ons/slides/$                   admin.php?slides=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/slides/add-slides$            admin.php?add-slides=$1 [L]
+RewriteRule ^admin/manage-add-ons/slides/add-slides/$           admin.php?add-slides=$1 [L]
+
+RewriteRule ^admin/manage-add-ons/slides/edit-slides-([^/]+)$   admin.php?edit-slides=$1 [L]
+RewriteRule ^admin/manage-add-ons/slides/edit-slides-([^/]+)/$  admin.php?edit-slides=$1 [L]
+###
+
+RewriteCond %{SCRIPT_FILENAME} !-f
+RewriteCond %{SCRIPT_FILENAME} !-d
+RewriteRule ^(.+)$ 							                        index.php?ispage=$1 [QSA,L]

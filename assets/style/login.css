@@ -1,0 +1,113 @@
+body {
+	background:url("../templates/images/bg.jpg") no-repeat scroll center top #000000;
+	font-family:Arial,Helvetica,sans-serif;
+	font-size:80%;
+	margin:0;
+}
+.clear {
+	clear:both;
+}
+#main_container {
+    margin: 150px auto 0;
+    padding: 0 0;
+    width: 600px;
+}
+.header_login{
+	width:600px;
+	margin:auto;
+}
+.logo {
+    float: left;
+    padding: 15px 0 0;
+    width: 220px;
+}
+.login_form {
+    background: url("../images/login_bg.png") no-repeat scroll center top transparent;
+    float: left;
+    height: 250px;
+    margin: 20px 0 0 5px;
+    padding: 0 0 0 0;
+    width: 600px;
+}
+a.forgot_pass{
+	float:right;
+	color:#256c89;
+	text-decoration:none;
+	background:url(../images/help.png) no-repeat left;
+	padding:0 0 0 18px;
+	display:block;
+	margin:15px 20px 0 0;
+}
+
+.footer_login{width:600px;margin:auto;}
+.left_footer_login{float:left;padding:15px 0 0 10px;color:#000;font-size:11px;}
+.left_footer_login a{color:#cc0000;text-decoration:none;}
+.right_footer_login{float:right;padding:15px 10px 0 0;}
+
+h3 {
+    clear: both;
+    color: #256C89;
+    float: left;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 15px 0 5px 0;
+	margin:0px;
+}
+
+label {
+    float: left;
+    font-weight: bold;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 5px;
+    width: 80px;
+}
+
+.button{ 
+	background:#cc0000; 
+	border:1px solid #000; 
+	cursor:pointer; 
+	padding:5px 15px;
+	-moz-border-radius:5px; 
+	-webkit-border-radius:5px;
+	color:#fff;
+	margin-top:10px;
+	}
+.button:hover { 
+	background-color:#fff;
+	color:#000; 
+	}
+
+/* MESSAGES */
+.msg-info, .msg-atten, .msg-ok, .msg-error { margin:3px 0; padding:10px 10px 10px 40px; -moz-border-radius:5px; -webkit-border-radius:5px; }
+.msg-info { background:#ADC2F7 url(../images/icons/msg-info.png) 6px center no-repeat; border:1px solid #6D94F7; color:#03C; }
+.msg-atten { background:#FAE673 url(../images/icons/msg-atten.png) 6px center no-repeat; border:1px solid #FEBD63; color:#C60; }
+.msg-ok { background:#AEE893 url(../images/icons/msg-ok.png) 6px center no-repeat; border:1px solid #8EC46C; color:#060; }
+.msg-error { background:#F4B8B5 url(../images/icons/msg-error.png) 6px center no-repeat; border:1px solid #C94042; color:#900; }
+/* END OF MESSAGES */
+
+/* FORMS */
+input,textarea, select {	-moz-border-radius:5px; -webkit-border-radius:5px;}
+form .box-small, form .box-medium, form .box-large { border:1px solid #999; color:#111; margin:5px 0; }
+form .box-small:hover, form .box-medium:hover, form .box-large:hover, form .box-small:focus, form .box-medium:focus, form .box-large:focus { background:#FFF url(../images/icons/bg_form.gif) top left repeat-y; }
+
+.box-medium { padding:6px 6px 6px 10px; }
+
+
+
+form .btn-green { background:#AEE893 url(../images/icons/minibg.png) top left repeat-x; border:1px solid #8EC46C; cursor:pointer; padding:5px 15px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+form .btn-green:hover { background-color:#BBF2B5; }
+form .btn-blue { background:#ADC2F7 url(../images/icons/minibg.png) top left repeat-x; border:1px solid #6D94F7; cursor:pointer; padding:5px 15px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+form .btn-blue:hover { background-color:#B7D1F9; }
+form .btn-grey { background:#AAA url(../images/icons/minibg.png) top left repeat-x; border:1px solid #777; cursor:pointer; padding:5px 15px; -moz-border-radius:5px; -webkit-border-radius:5px;}
+form .btn-grey:hover { background-color:#CCC; }
+/* END OF FORMS */
+
+/* TOOLTIP */
+.tipsy { background-repeat:no-repeat; font-size:12px; padding:5px; }
+.tipsy-inner { -moz-border-radius:5px; -webkit-border-radius:5px; background-color:#555; border:3px solid #000; color:white; max-width:400px; padding:4px 5px; text-align:center; }
+.tipsy-north { background-image:url(../images/icons/tipsy-north.gif); background-position:top center; }
+.tipsy-south { background-image:url(../images/icons/tipsy-south.gif); background-position:bottom center; }
+.tipsy-east { background-image:url(../images/icons/tipsy-east.gif); background-position:right center; }
+.tipsy-west { background-image:url(../images/icons/tipsy-west.gif); background-position:left center; }
+/* END TOOLTIP */

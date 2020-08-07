@@ -1,0 +1,118 @@
+/*-------------------------------------------------------+
+| David Carr's - Content Management System
+| http://www.daveismyname.co.uk/
++--------------------------------------------------------+
+| Author: David Carr  Email: dave@daveismyname.co.uk
++--------------------------------------------------------+*/
+
+a:link, a:active, a:visited {
+	 text-decoration:none;
+	 color:#cc0000;
+	 font-weight:bold;
+}
+
+a:hover {
+	 text-decoration:underline;
+}
+
+.clear {
+  	clear: both;
+}
+
+.f-left {
+    float: left;
+    margin-right: 5px;
+}
+
+.f-right {
+  	float: right;
+	margin-left: 5px;
+}
+
+.f-right img{
+	border:2px solid #ffed00;
+}
+
+.thumb {
+	background-color: #fff;
+	padding:5px;
+	border: 1px solid #eee;
+}
+
+label {
+	float:left;
+	font-weight:bold;
+	margin-right:10px;
+	padding-top:10px;
+	width:150px;
+}
+
+.button {
+	background:none repeat scroll 0 0 #cc0000;
+	border:1px solid #000000;
+	color:#FFFFFF;
+	cursor:pointer;
+	margin-top:10px;
+	padding:5px 15px;
+}
+.button:hover { 
+	background-color:#fff; 
+	color:#000;
+	}
+	
+div {
+  font-size: 1em;
+}
+
+#content-left p{
+	line-height:18px;
+	padding:5px 5px 5px 0;
+}
+
+h1 {
+	  font-size: 1.5em;
+	  line-height: 1em;
+	  padding-bottom:0.2em;
+	  color:#cc0000;
+	  margin:0 0 10px;
+}
+
+h2 {
+	border-bottom:1px solid #E4E4E4;
+	font-size:20px;
+	margin:0 0 10px;
+	padding:0 0 15px 10px;
+}
+
+h3 {
+	  font-size: 1.3em;
+	  margin:0 0 10px;
+	  font-weight:bold;
+}
+
+h4 {
+	 font-size: 1.2em;
+	  line-height: 1.3em;
+	  margin: 0 0 0.5em 0;
+	  font-weight:bold;
+	  margin:0 0 10px;
+	  color:#CC9933;
+}
+
+h5 { 
+	  font-size: 1em;
+	  line-height: 1.5em;
+	  color:#000;
+	  margin:0 0 10px;
+}
+
+
+ul {
+	margin-left: 20px;
+    Padding: 5px;
+}
+
+li {
+	padding: 5px;
+	margin: 0;
+}
